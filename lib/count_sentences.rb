@@ -23,12 +23,12 @@ class String
   self.split(/\.|\?|!/) splits string at . ? ! and returns an array
   but ^^ also returns an array with empty ("") elements
   .reject{|x| x.empty?} returns an array with empty elements removed
-  .count returns # of strings
+  .count returns # of strings which are sentences
 =end 
 
     #solution
-    count_sentence = self.split(/\.|\?|!/).reject{|x| x.empty?}.count
-    count_sentence
+    self.split(/\.|\?|!/).reject{|x| x.empty?}.count
+    
     
   end
 end
